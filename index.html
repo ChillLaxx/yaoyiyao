@@ -14,11 +14,7 @@
     body,html{
         background-color: #ccc;
     }
-    h1{
-        left: 50%;
-        text-align: center;
-    }
-
+  
     .des{
         position: absolute;
         left: 50%;
@@ -30,7 +26,6 @@
     </style>
 </head>
 <body>
-    <h1>摇一摇拿红包</h1>
     <div class="des">只能摇一次，多次无效！</div>
     <script>
         var SHAKE_THRESHOLD = 800;
@@ -63,7 +58,7 @@
                     // document.body.appendChild(div);
                     if(window.alert = true){
                         alert('你已经摇过了噢');
-                        break;
+                        return;
                      }   
                 }
                 last_x = x;
