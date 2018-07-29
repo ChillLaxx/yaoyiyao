@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <div id="item"></div>
     <script>
         var SHAKE_THRESHOLD = 800;
         var last_update = 0;
@@ -27,13 +26,13 @@
                 var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
                 if (speed > SHAKE_THRESHOLD) {
                     var probability = Math.ceil(Math.random() * 10);
-                    if (probability < 0.05) {
+                    if (probability < 0.5) {
                         alert('5.00元');
-                    } else if (probability < 0.2) {
+                    } else if (probability < 2) {
                         alert('1.00元');
-                    } else if (probability < 0.5) {
+                    } else if (probability < 5) {
                         alert('0.50元');
-                    } else if (probability > 0.5) {
+                    } else if (probability > 5) {
                         alert('没有红包');
                     }
                     var div = document.createElement('div');
@@ -45,6 +44,8 @@
                 last_z = z;
             }
         }
+
+        window.addEventListener('devicemotion',deviceMotionHeadler,false);
     </script>
 </body>
 
