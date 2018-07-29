@@ -5,10 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+    <title>摇一摇，拿红包</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body,html{
+        background-color: #ccc;
+    }
+    h1{
+        left: 50%;
+        text-align: center;
+    }
 
+    .des{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      font-size: 2em;  
+    }
+    </style>
+</head>
 <body>
+    <h1>摇一摇拿红包</h1>
+    <div class="des">只能摇一次，多次无效！</div>
     <script>
         var SHAKE_THRESHOLD = 800;
         var last_update = 0;
@@ -27,17 +50,21 @@
                 if (speed > SHAKE_THRESHOLD) {
                     var probability = Math.ceil(Math.random() * 10);
                     if (probability < 0.5) {
-                        alert('5.00元');
+                        alert('获得红包:5.00元');
                     } else if (probability < 2) {
-                        alert('1.00元');
+                        alert('获得红包:1.00元');
                     } else if (probability < 5) {
-                        alert('0.50元');
+                        alert('获得红包:0.50元');
                     } else if (probability > 5) {
                         alert('没有红包');
                     }
-                    var div = document.createElement('div');
-                    div.innerText = '你已经摇过了';
-                    document.body.appendChild(div);
+                    // var div = document.createElement('div');
+                    // div.innerText = '你已经摇过了';
+                    // document.body.appendChild(div);
+                    if(window.alert = true){
+                        alert('你已经摇过了噢');
+                        break;
+                     }   
                 }
                 last_x = x;
                 last_y = y;
