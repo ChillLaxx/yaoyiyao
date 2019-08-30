@@ -7,24 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>帮你选择礼品</title>
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body,html{
-        background-color: #ccc;
-    }
-  
-    .des{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-      font-size: 2em;  
-    }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            background-color: #ccc;
+        }
+
+        .des {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 2em;
+        }
     </style>
 </head>
+
 <body>
     <div class="des">lets do it!</div>
     <script>
@@ -46,52 +49,52 @@
                     var probability = Math.ceil(Math.random() * 10);
                     if (probability < 0.5) {
                         alert('A');
-                    } else if (probability >0.5 && probability< 1) {
+                    } else if (probability > 0.5 && probability < 1) {
                         alert('B');
-                    } else if (probability> 1 && probability < 1.5) {
+                    } else if (probability > 1 && probability < 1.5) {
                         alert('C');
-                    } else if (probability> 1.5 && probability < 2  ) {
+                    } else if (probability > 1.5 && probability < 2) {
                         alert('D');
-                    } else if (probability> 1.5 && probability < 2  ) {
+                    } else if (probability > 1.5 && probability < 2) {
                         alert('E');
-                    } else if (probability> 2 && probability < 2.5  ) {
+                    } else if (probability > 2 && probability < 2.5) {
                         alert('F');
-                    } else if (probability> 2.5 && probability < 3  ) {
+                    } else if (probability > 2.5 && probability < 3) {
                         alert('G');
-                    } else if (probability> 3 && probability < 3.5  ) {
+                    } else if (probability > 3 && probability < 3.5) {
                         alert('H');
-                    } else if (probability> 3.5 && probability < 4  ) {
+                    } else if (probability > 3.5 && probability < 4) {
                         alert('I');
-                    } else if (probability> 4 && probability < 4.5  ) {
+                    } else if (probability > 4 && probability < 4.5) {
                         alert('J');
-                    } else if (probability> 4.5 && probability < 5  ) {
+                    } else if (probability > 4.5 && probability < 5) {
                         alert('K');
-                    } else if (probability> 5 && probability < 5.5  ) {
+                    } else if (probability > 5 && probability < 5.5) {
                         alert('L');
-                    } else if (probability> 5.5 && probability < 6  ) {
+                    } else if (probability > 5.5 && probability < 6) {
                         alert('M');
-                    } else if (probability> 6 && probability < 6.5  ) {
+                    } else if (probability > 6 && probability < 6.5) {
                         alert('N');
-                    } else if (probability> 6.5 && probability < 7  ) {
+                    } else if (probability > 6.5 && probability < 7) {
                         alert('O');
-                    } else if (probability> 7 && probability < 7.5  ) {
+                    } else if (probability > 7 && probability < 7.5) {
                         alert('P');
-                    } else if (probability> 7.5 && probability < 8  ) {
+                    } else if (probability > 7.5 && probability < 8) {
                         alert('Q');
-                    } else if (probability> 8 && probability < 8.5  ) {
+                    } else if (probability > 8 && probability < 8.5) {
                         alert('R');
-                    } else if (probability> 8.5 && probability < 9  ) {
+                    } else if (probability > 8.5 && probability < 9) {
                         alert('S');
-                    } else if (probability> 9 && probability < 9.5  ) {
+                    } else if (probability > 9 && probability < 9.5) {
                         alert('T');
-                    } 
+                    }
                     // var div = document.createElement('div');
                     // div.innerText = '你已经摇过了';
                     // document.body.appendChild(div);
-                    if(window.alert = true){
+                    if (window.alert = true) {
                         alert('你已经摇过了噢');
                         return;
-                     }   
+                    }
                 }
                 last_x = x;
                 last_y = y;
@@ -99,7 +102,7 @@
             }
         }
 
-        window.addEventListener('devicemotion',deviceMotionHeadler,false);
+        window.addEventListener('devicemotion', deviceMotionHeadler, false);
     </script>
 </body>
 
