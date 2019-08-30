@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>摇一摇，拿红包</title>
+    <title>帮你选择礼品</title>
     <style>
     *{
         margin: 0;
@@ -44,15 +44,47 @@
                 var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
                 if (speed > SHAKE_THRESHOLD) {
                     var probability = Math.ceil(Math.random() * 10);
-                    if (probability < 0.3) {
-                        alert('获得红包:5.00元');
-                    } else if (probability < 1.5) {
-                        alert('获得红包:1.00元');
-                    } else if (probability < 3.5) {
-                        alert('获得红包:0.50元');
-                    } else if (probability > 3.5) {
-                        alert('没有红包');
-                    }
+                    if (probability < 0.5) {
+                        alert('A');
+                    } else if (probability >0.5 && probability< 1) {
+                        alert('B');
+                    } else if (probability> 1 && probability < 1.5) {
+                        alert('C');
+                    } else if (probability> 1.5 && probability < 2  ) {
+                        alert('D');
+                    } else if (probability> 1.5 && probability < 2  ) {
+                        alert('E');
+                    } else if (probability> 2 && probability < 2.5  ) {
+                        alert('F');
+                    } else if (probability> 2.5 && probability < 3  ) {
+                        alert('G');
+                    } else if (probability> 3 && probability < 3.5  ) {
+                        alert('H');
+                    } else if (probability> 3.5 && probability < 4  ) {
+                        alert('I');
+                    } else if (probability> 4 && probability < 4.5  ) {
+                        alert('J');
+                    } else if (probability> 4.5 && probability < 5  ) {
+                        alert('K');
+                    } else if (probability> 5 && probability < 5.5  ) {
+                        alert('L');
+                    } else if (probability> 5.5 && probability < 6  ) {
+                        alert('M');
+                    } else if (probability> 6 && probability < 6.5  ) {
+                        alert('N');
+                    } else if (probability> 6.5 && probability < 7  ) {
+                        alert('O');
+                    } else if (probability> 7 && probability < 7.5  ) {
+                        alert('P');
+                    } else if (probability> 7.5 && probability < 8  ) {
+                        alert('Q');
+                    } else if (probability> 8 && probability < 8.5  ) {
+                        alert('R');
+                    } else if (probability> 8.5 && probability < 9  ) {
+                        alert('S');
+                    } else if (probability> 9 && probability < 9.5  ) {
+                        alert('T');
+                    } 
                     // var div = document.createElement('div');
                     // div.innerText = '你已经摇过了';
                     // document.body.appendChild(div);
